@@ -58,7 +58,7 @@ namespace LANux_CMDux
                 Console.WriteLine("Please use your password...");
                 u.Password = Console.ReadLine();
 
-
+                //
                 HttpResponseMessage response = client.PostAsJsonAsync("api/Login", u).Result;
                 if (!response.IsSuccessStatusCode)
                 {
